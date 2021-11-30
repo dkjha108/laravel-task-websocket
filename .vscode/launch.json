@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+    {
+    "name": "Launch & Debug",
+    "configurations": [ "Launch Program", "Launch localhost" ]
+    }
+    ],
+    "configurations": [
+    {
+    "type": "php",
+    "request": "launch",
+    "name": "Launch Program",
+    "cwd": "/var/www/html/projects",
+    "port": 9003
+    },
+    {
+    "name": "Launch localhost",
+    "type": "chrome",
+    "request": "launch",
+    "url": "http://127.0.0.1:8001/",
+    "webRoot": "/var/www/html/projects"
+    }
+    ]
+}
